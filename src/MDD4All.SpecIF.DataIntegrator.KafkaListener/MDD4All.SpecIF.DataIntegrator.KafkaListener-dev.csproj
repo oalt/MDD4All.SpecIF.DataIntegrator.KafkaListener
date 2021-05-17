@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MDD4All_Github.snk</AssemblyOriginatorKeyFile>
+    <AssemblyName>MDD4All.SpecIF.DataIntegrator.KafkaListener</AssemblyName>
+    <RootNamespace>MDD4All.SpecIF.DataIntegrator.KafkaListener</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MDD4All.Kafka.DataAccess\src\MDD4All.Kafka.DataAccess\MDD4All.Kafka.DataAccess-dev.csproj" />
+    <ProjectReference Include="..\..\..\MDD4All.SpecIF.DataIntegrator.Contracts\src\MDD4All.SpecIF.DataIntegrator.Contracts\MDD4All.SpecIF.DataIntegrator.Contracts-dev.csproj" />
+  </ItemGroup>
+
+</Project>
