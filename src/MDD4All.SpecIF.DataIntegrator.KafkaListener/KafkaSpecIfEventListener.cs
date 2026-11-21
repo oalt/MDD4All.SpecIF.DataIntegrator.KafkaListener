@@ -11,7 +11,7 @@ namespace MDD4All.SpecIF.DataIntegrator.KafkaListener
     public class KafkaSpecIfEventListener : AbstractSpecIfEventListener
     {
 
-        private string _kafkaBootstrapServer = "localhost:9092";
+        private string _kafkaBootstrapServer = "127.0.0.1:9092";
 
         private string _groupID = "ea-consumer-group";
 

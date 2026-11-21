@@ -1,7 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MDD4All_Github.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,7 +13,6 @@
   <ItemGroup>
     <ProjectReference Include="..\MDD4All.Kafka.DataAccess\MDD4All.Kafka.DataAccess.csproj" />
     <ProjectReference Include="..\MDD4All.SpecIF.DataIntegrator.Contracts\MDD4All.SpecIF.DataIntegrator.Contracts.csproj" />
-    <ProjectReference Include="..\MDD4All.SpecIF.DataModels\MDD4All.SpecIF.DataModels.csproj" />
   </ItemGroup>
 
 </Project>
